@@ -19,7 +19,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('images/favicons/apple-icon-144x144.png') }}">
     <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('images/favicons/apple-icon-152x152.png') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/favicons/apple-icon-180x180.png') }}">
-    <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('images/favicons//android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('images/favicons/android-icon-192x192.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicons/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('images/favicons/favicon-96x96.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicons/favicon-16x16.png') }}">
@@ -277,6 +277,18 @@
     <script type="text/javascript" src="{{ asset('vendor/hcode/js/main.js') }}"></script>
     @include('partials._messages')
     @yield('js')
+
+    <script type="text/javascript">
+        $(".owl-carousel").owlCarousel({
+            autoPlay: 5000,
+            items : 1, // THIS IS IMPORTANT
+            responsive : {
+                480 : { items : 1  }, // from zero to 480 screen width 4 items
+                768 : { items : 2  }, // from 480 screen widthto 768 6 items
+                1024 : { items : 3 } // from 768 screen width to 1024 8 items 
+            },
+      });
+    </script>
 </body>
 
 <!-- Mirrored from www.themezaa.com/html/h-code/portfolio-short-description.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Sep 2018 20:27:12 GMT -->
