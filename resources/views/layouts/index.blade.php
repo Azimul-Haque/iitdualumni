@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 
 <head>
-    <title>IITDU ALUMNI ASSOCIATION | @yield('title')</title>
+    <title>IITDU Alumni Association | @yield('title')</title>
     <meta name="description" content="Official website of IITDU Alumni Association. Developed by A. H. M. Azimul Haque and Md. Abdul Mannan.">
     <meta name="keywords" content="IITDU, IIT, University of Dhaka, IIT Alumni">
     <meta charset="utf-8">
