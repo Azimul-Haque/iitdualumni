@@ -1,6 +1,6 @@
 @extends('layouts.index')
 @section('title')
-    IIT Alumni | {{ Auth::user()->name }}
+    {{ Auth::user()->name }}
 @endsection
 
 @section('css')
