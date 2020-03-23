@@ -216,6 +216,10 @@ class IndexController extends Controller
         return redirect()->route('index.profile', $unique_key);
     }
 
+    public function coronaAwareness()
+    {
+        return view('index.coronaawareness');
+    }
 
     // clear configs, routes and serve
     public function clear()

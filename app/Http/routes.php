@@ -32,6 +32,7 @@ Route::get('/application', ['as'=>'index.application','uses'=>'IndexController@g
 Route::get('/member/login', ['as'=>'index.login','uses'=>'IndexController@getLogin']);
 Route::get('/member/profile/{unique_key}', ['as'=>'index.profile','uses'=>'IndexController@getProfile']);
 Route::post('/member/application/store', ['as'=>'index.storeapplication','uses'=>'IndexController@storeApplication']);
+Route::get('/corona/awareness', ['as'=>'corona.awareness','uses'=>'IndexController@coronaAwareness']);
 // index routes
 // index routes
 
