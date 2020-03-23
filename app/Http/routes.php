@@ -69,3 +69,13 @@ Route::patch('/dashboard/applications/{id}/approve', ['as'=>'dashboard.approveap
 Route::delete('/dashboard/application/{id}', ['as'=>'dashboard.deleteapplication','uses'=>'DashboardController@deleteApplication']);
 // dashboard routes
 // dashboard routes
+
+// fight for life
+// fight for life
+Route::group(['domain' => '{donate}.iitdualumni.com'], function () {
+    Route::get('test', function () {
+        return 'test';
+    });
+});
+// fight for life
+// fight for life
