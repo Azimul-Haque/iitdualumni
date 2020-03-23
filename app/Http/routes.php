@@ -72,7 +72,7 @@ Route::delete('/dashboard/application/{id}', ['as'=>'dashboard.deleteapplication
 
 // fight for life
 // fight for life
-Route::group(['domain' => '{donate}.iitdualumni.com'], function () {
+Route::group(['domain' => 'donate.iitdualumni.com'], function () {
     Route::get('test', function () {
         return 'test';
     });
